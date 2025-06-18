@@ -66,6 +66,7 @@
     <div class='panel panel-default' ng-show="deduperCntrl.showTiles">
       <div class="panel-heading">{{mergePair['srcName']}} vs {{mergePair['dstName']}}</div>
       <div class='panel-body' ng-show="deduperCntrl.showTiles">
+        <div class="row">
         <contact-basic class='col-md-4' options="{contact_id: mergePair['srcID'], display_name : mergePair['srcName'], 'contact_url' : contactURL}"></contact-basic>
 
         <div class='col-md-4'>
@@ -79,6 +80,7 @@
           <div><a target="_blank" class="btn btn-link btn-block" href="{{mergeURL}}&cid={{mergePair['dstID']}}&oid={{mergePair['srcID']}}">{{ ts('Manual Merge') }}</a></div>
         </div>
         <contact-basic class='col-md-4' options="{contact_id: mergePair['dstID'], display_name : mergePair['dstName'], 'contact_url' : contactURL}"></contact-basic>
+        </div>  
      </div>
     </div>
 
